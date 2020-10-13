@@ -4,7 +4,7 @@
 #include "md5/md5.h"
 
 #define XXH_STATIC_LINKING_ONLY
-#include "xxHash/xxhash.h"
+#include "xxHash/xxh_x86dispatch.h"
 
 #include "blake3/blake3.h"
 
