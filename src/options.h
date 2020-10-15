@@ -232,6 +232,8 @@ struct Options {
 							hash_algorithm = HashAlgorithm::xxh64;
 						} else if (!strcmp(optarg, "BLAKE3")) {
 							hash_algorithm = HashAlgorithm::blake3;
+						} else if (!strcmp(optarg, "XXH128")) {
+							hash_algorithm = HashAlgorithm::xxh128;
 						} else if (!strcmp(optarg, "auto")) {
 							hash_algorithm = HashAlgorithm::auto_select;
 						} else {
