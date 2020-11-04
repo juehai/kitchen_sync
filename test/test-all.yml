@@ -10,70 +10,7 @@
 
 version: '3'
 services:
-  ubuntu_18.04-mariadb_10.4:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-mariadb:10.4 # from MariaDB's repos
-  ubuntu_18.04-mariadb_10.3:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-mariadb:10.3 # from MariaDB's repos
-  ubuntu_18.04-mariadb_10.2:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-mariadb:10.2 # from MariaDB's repos
-  ubuntu_18.04-mariadb_10.1:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-mariadb:10.1 # from Ubuntu's repos and uses the LGPL 'compat' client
-  ubuntu_18.04-mysql_8.0:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-mysql:8.0 # from MySQL AB's repos
-  ubuntu_18.04-postgresql_12_no_postgis:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-postgresql:12-no-postgis # from PGDG's repos
-  ubuntu_18.04-postgresql_12:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-postgresql:12 # from PGDG's repos
-  ubuntu_18.04-postgresql_11:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-postgresql:11 # from PGDG's repos
-
-  ubuntu_20.04-postgresql_11-mysql_8.0:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:20.04-postgresql:12-mysql:8.0
-  ubuntu_18.04-postgresql_10-mysql_5.7:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:18.04-postgresql:10-mysql:5.7
-  ubuntu_16.04-postgresql_9.5-mysql_5.7:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-ubuntu:16.04-postgresql:9.5-mysql:5.7
-  centos_7-mariadb_5.5-postgresql_9.2:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-centos:7-mariadb:5.5-postgresql:9.2-no-postgis
-
   ubuntu_20.04-checks:
     build:
       context: ..
       dockerfile: test/Dockerfile-ubuntu:20.04-checks
-
-  sync-local:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-sync-local
-  sync-ssh:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-sync-ssh
-  sync-v1:
-    build:
-      context: ..
-      dockerfile: test/Dockerfile-sync-v1
